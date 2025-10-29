@@ -1,4 +1,4 @@
-import { Calendar, Trophy, TrendingUp, Users, Target, Sparkles } from 'lucide-react';
+import { Calendar, Trophy, TrendingUp, Target, Sparkles } from 'lucide-react';
 
 interface ProjectsProps {
   language: 'en' | 'pt';
