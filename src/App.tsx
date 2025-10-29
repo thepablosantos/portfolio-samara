@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [language, setLanguage] = useState<'en' | 'pt'>('en');
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black transition-colors duration-300">
+    <div className="min-h-screen bg-neutral-lightCream dark:bg-neutral-deepBlack transition-colors duration-300">
       <Header
         theme={theme}
         language={language}

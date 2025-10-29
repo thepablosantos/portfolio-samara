@@ -183,13 +183,13 @@ const Skills = ({ language }: SkillsProps) => {
   const t = content[language];
 
   return (
-    <section id="skills" className="py-24 px-6 bg-white dark:bg-black">
+    <section id="skills" className="py-24 px-6 bg-neutral-lightCream dark:bg-neutral-deepBlack">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
             {t.title}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
+          <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray text-lg">
             {t.subtitle}
           </p>
         </div>
@@ -198,13 +198,13 @@ const Skills = ({ language }: SkillsProps) => {
           {t.categories.map((category, index) => (
             <div
               key={index}
-              className="p-8 bg-gray-50 dark:bg-gray-900 border-2 border-gray-200 dark:border-gray-800 rounded-2xl hover:border-teal-500 dark:hover:border-teal-500 transition-all group"
+              className="p-8 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 border-2 border-neutral-sage/30 dark:border-neutral-darkGreen rounded-2xl hover:border-primary-coral dark:hover:border-primary-coral transition-all group"
             >
               <div className="flex items-center space-x-4 mb-6">
-                <div className="p-4 bg-teal-100 dark:bg-teal-900/30 rounded-xl group-hover:scale-110 transition-transform">
-                  <category.icon className="w-7 h-7 text-teal-600 dark:text-teal-400" />
+                <div className="p-4 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-xl group-hover:scale-110 transition-transform">
+                  <category.icon className="w-7 h-7 text-primary-coral dark:text-primary-sand" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream">
                   {category.title}
                 </h3>
               </div>
@@ -212,7 +212,7 @@ const Skills = ({ language }: SkillsProps) => {
                 {category.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="px-4 py-2 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-lg hover:border-teal-500 dark:hover:border-teal-500 hover:text-teal-600 dark:hover:text-teal-400 transition-all"
+                    className="px-4 py-2 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage/30 dark:border-neutral-darkGreen text-neutral-darkGreen/80 dark:text-neutral-sage text-sm rounded-lg hover:border-primary-coral dark:hover:border-primary-coral hover:text-primary-coral dark:hover:text-primary-sand transition-all"
                   >
                     {skill}
                   </span>
@@ -223,10 +223,10 @@ const Skills = ({ language }: SkillsProps) => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-8 bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 border-2 border-teal-200 dark:border-teal-800 rounded-2xl">
+          <div className="p-8 bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 border-2 border-primary-sand/50 dark:border-primary-coral/50 rounded-2xl">
             <div className="flex items-center space-x-3 mb-6">
-              <GlobeIcon className="w-6 h-6 text-teal-600 dark:text-teal-400" />
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+              <GlobeIcon className="w-6 h-6 text-primary-coral dark:text-primary-sand" />
+              <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream">
                 {t.languages.title}
               </h3>
             </div>
@@ -234,15 +234,15 @@ const Skills = ({ language }: SkillsProps) => {
               {t.languages.items.map((lang, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between p-4 bg-white dark:bg-black rounded-xl"
+                  className="flex items-center justify-between p-4 bg-neutral-lightCream dark:bg-neutral-deepBlack rounded-xl"
                 >
                   <div className="flex items-center space-x-3">
                     <span className="text-3xl">{lang.flag}</span>
-                    <span className="font-semibold text-gray-900 dark:text-white">
+                    <span className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream">
                       {lang.name}
                     </span>
                   </div>
-                  <span className="px-4 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-400 text-sm font-medium rounded-full">
+                  <span className="px-4 py-1 bg-primary-sand/30 dark:bg-teal-900/50 text-primary-coral dark:text-primary-sand text-sm font-medium rounded-full">
                     {lang.level}
                   </span>
                 </div>
@@ -253,7 +253,7 @@ const Skills = ({ language }: SkillsProps) => {
           <div className="p-8 bg-gradient-to-br from-cyan-50 to-teal-50 dark:from-cyan-900/20 dark:to-teal-900/20 border-2 border-cyan-200 dark:border-cyan-800 rounded-2xl">
             <div className="flex items-center space-x-3 mb-6">
               <Award className="w-6 h-6 text-cyan-600 dark:text-cyan-400" />
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+              <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream">
                 {t.softSkills.title}
               </h3>
             </div>
@@ -261,9 +261,9 @@ const Skills = ({ language }: SkillsProps) => {
               {t.softSkills.items.map((skill, index) => (
                 <div
                   key={index}
-                  className="p-3 bg-white dark:bg-black rounded-xl text-center"
+                  className="p-3 bg-neutral-lightCream dark:bg-neutral-deepBlack rounded-xl text-center"
                 >
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  <span className="text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage">
                     {skill}
                   </span>
                 </div>

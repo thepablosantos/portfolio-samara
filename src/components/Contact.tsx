@@ -51,73 +51,73 @@ const Contact = ({ language }: ContactProps) => {
   const t = content[language];
 
   return (
-    <section id="contact" className="py-24 px-6 bg-white dark:bg-black">
+    <section id="contact" className="py-24 px-6 bg-neutral-lightCream dark:bg-neutral-deepBlack">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
             {t.title}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray text-lg max-w-2xl mx-auto">
             {t.subtitle}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2 space-y-8">
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+            <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray leading-relaxed">
               {t.description}
             </p>
 
-            <div className="p-6 bg-teal-50 dark:bg-teal-900/20 border-2 border-teal-200 dark:border-teal-800 rounded-2xl">
+            <div className="p-6 bg-primary-sand/20 dark:bg-primary-coral/10 border-2 border-primary-sand/50 dark:border-primary-coral/50 rounded-2xl">
               <div className="flex items-center space-x-2 mb-3">
-                <div className="w-3 h-3 bg-teal-500 rounded-full animate-pulse" />
-                <h3 className="font-semibold text-gray-900 dark:text-white">
+                <div className="w-3 h-3 bg-primary-coral rounded-full animate-pulse" />
+                <h3 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream">
                   {t.availability}
                 </h3>
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
                 {t.availabilityText}
               </p>
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
+              <h3 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
                 {language === 'en' ? 'Contact Information' : 'Informações de Contato'}
               </h3>
 
               <a
                 href="mailto:samara-allves@hotmail.com"
-                className="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors group"
+                className="flex items-center space-x-4 p-4 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-xl hover:bg-neutral-softGray/20 dark:hover:bg-gray-800 transition-colors group"
               >
-                <div className="p-3 bg-teal-100 dark:bg-teal-900/30 rounded-lg group-hover:scale-110 transition-transform">
-                  <Mail className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+                <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-lg group-hover:scale-110 transition-transform">
+                  <Mail className="w-5 h-5 text-primary-coral dark:text-primary-sand" />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">{t.email}</p>
-                  <p className="text-gray-900 dark:text-white font-medium">samara-allves@hotmail.com</p>
+                  <p className="text-xs text-neutral-sage dark:text-neutral-softGray">{t.email}</p>
+                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">samara-allves@hotmail.com</p>
                 </div>
               </a>
 
-              <div className="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl">
-                <div className="p-3 bg-teal-100 dark:bg-teal-900/30 rounded-lg">
-                  <MapPin className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+              <div className="flex items-center space-x-4 p-4 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-xl">
+                <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-lg">
+                  <MapPin className="w-5 h-5 text-primary-coral dark:text-primary-sand" />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">{t.location}</p>
-                  <p className="text-gray-900 dark:text-white font-medium">Ragusa, Italy</p>
+                  <p className="text-xs text-neutral-sage dark:text-neutral-softGray">{t.location}</p>
+                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">Ragusa, Italy</p>
                 </div>
               </div>
 
               <a
                 href="tel:+353831222227"
-                className="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors group"
+                className="flex items-center space-x-4 p-4 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-xl hover:bg-neutral-softGray/20 dark:hover:bg-gray-800 transition-colors group"
               >
-                <div className="p-3 bg-teal-100 dark:bg-teal-900/30 rounded-lg group-hover:scale-110 transition-transform">
-                  <Phone className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+                <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-lg group-hover:scale-110 transition-transform">
+                  <Phone className="w-5 h-5 text-primary-coral dark:text-primary-sand" />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">{t.phone}</p>
-                  <p className="text-gray-900 dark:text-white font-medium">+353 83 122 2227</p>
+                  <p className="text-xs text-neutral-sage dark:text-neutral-softGray">{t.phone}</p>
+                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">+353 83 122 2227</p>
                 </div>
               </a>
 
@@ -125,29 +125,29 @@ const Contact = ({ language }: ContactProps) => {
                 href="https://www.linkedin.com/in/samara-alves-marketing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors group"
+                className="flex items-center space-x-4 p-4 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-xl hover:bg-neutral-softGray/20 dark:hover:bg-gray-800 transition-colors group"
               >
-                <div className="p-3 bg-teal-100 dark:bg-teal-900/30 rounded-lg group-hover:scale-110 transition-transform">
-                  <Linkedin className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+                <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-lg group-hover:scale-110 transition-transform">
+                  <Linkedin className="w-5 h-5 text-primary-coral dark:text-primary-sand" />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">LinkedIn</p>
-                  <p className="text-gray-900 dark:text-white font-medium">Samara Alves</p>
+                  <p className="text-xs text-neutral-sage dark:text-neutral-softGray">LinkedIn</p>
+                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">Samara Alves</p>
                 </div>
               </a>
             </div>
 
-            <div className="p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800">
+            <div className="p-6 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-2xl border border-neutral-sage/30 dark:border-neutral-darkGreen">
               <div className="flex items-center space-x-3 mb-3">
-                <FileDown className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                <h3 className="font-semibold text-gray-900 dark:text-white">
+                <FileDown className="w-5 h-5 text-primary-coral dark:text-primary-sand" />
+                <h3 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream">
                   {t.downloadResume}
                 </h3>
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+              <p className="text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray mb-4">
                 {t.resumeText}
               </p>
-              <button className="w-full px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white rounded-xl font-medium transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+              <button className="w-full px-6 py-3 bg-primary-coral hover:bg-primary-coral/90 text-white rounded-xl font-medium transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
                 <FileDown className="w-4 h-4" />
                 <span>{t.downloadResume}</span>
               </button>
@@ -155,10 +155,10 @@ const Contact = ({ language }: ContactProps) => {
           </div>
 
           <div className="lg:col-span-3">
-            <div className="p-8 bg-gray-50 dark:bg-gray-900 rounded-2xl border-2 border-gray-200 dark:border-gray-800">
+            <div className="p-8 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-2xl border-2 border-neutral-sage/30 dark:border-neutral-darkGreen">
               <div className="flex items-center space-x-3 mb-6">
-                <Send className="w-6 h-6 text-teal-600 dark:text-teal-400" />
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <Send className="w-6 h-6 text-primary-coral dark:text-primary-sand" />
+                <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream">
                   {t.sendMessage}
                 </h3>
               </div>
@@ -166,52 +166,52 @@ const Contact = ({ language }: ContactProps) => {
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <label className="block text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage mb-2">
                       {t.formName}
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-xl focus:outline-none focus:border-teal-500 dark:focus:border-teal-500 text-gray-900 dark:text-white transition-colors"
+                      className="w-full px-4 py-3 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage dark:border-neutral-darkGreen/70 rounded-xl focus:outline-none focus:border-primary-coral dark:focus:border-primary-coral text-neutral-darkGreen dark:text-neutral-lightCream transition-colors"
                       placeholder={t.formName}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <label className="block text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage mb-2">
                       {t.formEmail}
                     </label>
                     <input
                       type="email"
-                      className="w-full px-4 py-3 bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-xl focus:outline-none focus:border-teal-500 dark:focus:border-teal-500 text-gray-900 dark:text-white transition-colors"
+                      className="w-full px-4 py-3 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage dark:border-neutral-darkGreen/70 rounded-xl focus:outline-none focus:border-primary-coral dark:focus:border-primary-coral text-neutral-darkGreen dark:text-neutral-lightCream transition-colors"
                       placeholder={t.formEmail}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label className="block text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage mb-2">
                     {t.formSubject}
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-xl focus:outline-none focus:border-teal-500 dark:focus:border-teal-500 text-gray-900 dark:text-white transition-colors"
+                    className="w-full px-4 py-3 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage dark:border-neutral-darkGreen/70 rounded-xl focus:outline-none focus:border-primary-coral dark:focus:border-primary-coral text-neutral-darkGreen dark:text-neutral-lightCream transition-colors"
                     placeholder={t.formSubject}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label className="block text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage mb-2">
                     {t.formMessage}
                   </label>
                   <textarea
                     rows={6}
-                    className="w-full px-4 py-3 bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-xl focus:outline-none focus:border-teal-500 dark:focus:border-teal-500 text-gray-900 dark:text-white transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage dark:border-neutral-darkGreen/70 rounded-xl focus:outline-none focus:border-primary-coral dark:focus:border-primary-coral text-neutral-darkGreen dark:text-neutral-lightCream transition-colors resize-none"
                     placeholder={t.formMessage}
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white rounded-xl font-medium transition-all transform hover:scale-105 shadow-lg shadow-teal-500/30 flex items-center justify-center space-x-2"
+                  className="w-full px-8 py-4 bg-primary-coral hover:bg-primary-coral/90 text-white rounded-xl font-medium transition-all transform hover:scale-105 shadow-lg shadow-primary-coral/30 flex items-center justify-center space-x-2"
                 >
                   <span>{t.formButton}</span>
                   <Send className="w-4 h-4" />

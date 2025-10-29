@@ -143,13 +143,13 @@ const Projects = ({ language }: ProjectsProps) => {
   const t = content[language];
 
   return (
-    <section id="projects" className="py-24 px-6 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="py-24 px-6 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
             {t.title}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto">
+          <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray text-lg max-w-3xl mx-auto">
             {t.subtitle}
           </p>
         </div>
@@ -158,40 +158,40 @@ const Projects = ({ language }: ProjectsProps) => {
           {t.projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-black border-2 border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden hover:border-teal-500 dark:hover:border-teal-500 transition-all group"
+              className="bg-neutral-lightCream dark:bg-neutral-deepBlack border-2 border-neutral-sage/30 dark:border-neutral-darkGreen rounded-3xl overflow-hidden hover:border-primary-coral dark:hover:border-primary-coral transition-all group"
             >
               <div className="grid lg:grid-cols-3 gap-8 p-8 lg:p-10">
                 <div className="lg:col-span-2 space-y-6">
                   <div>
                     <div className="flex items-center space-x-3 mb-3">
-                      <span className="px-4 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-400 text-sm font-semibold rounded-full">
+                      <span className="px-4 py-1 bg-primary-sand/30 dark:bg-primary-coral/20 text-primary-coral dark:text-primary-sand text-sm font-semibold rounded-full">
                         {project.category}
                       </span>
-                      <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                      <div className="flex items-center space-x-2 text-sm text-neutral-sage dark:text-neutral-softGray">
                         <Calendar className="w-4 h-4" />
                         <span>{project.period}</span>
                       </div>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-colors">
+                    <h3 className="text-2xl md:text-3xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-2 group-hover:text-primary-coral dark:group-hover:text-teal-400 transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-teal-600 dark:text-teal-400 font-medium text-lg">
+                    <p className="text-primary-coral dark:text-primary-sand font-medium text-lg">
                       {project.company}
                     </p>
                   </div>
 
-                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray leading-relaxed">
                     {project.description}
                   </p>
 
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center">
+                    <h4 className="text-sm font-semibold text-neutral-darkGreen/80 dark:text-neutral-sage mb-3 flex items-center">
                       <Trophy className="w-4 h-4 mr-2 text-teal-500" />
                       {language === 'en' ? 'Key Achievements' : 'Principais Conquistas'}
                     </h4>
                     <ul className="space-y-2">
                       {project.achievements.map((achievement, i) => (
-                        <li key={i} className="flex items-start space-x-2 text-gray-600 dark:text-gray-400 text-sm">
+                        <li key={i} className="flex items-start space-x-2 text-neutral-darkGreen/70 dark:text-neutral-softGray text-sm">
                           <Sparkles className="w-4 h-4 text-teal-500 mt-0.5 flex-shrink-0" />
                           <span>{achievement}</span>
                         </li>
@@ -203,7 +203,7 @@ const Projects = ({ language }: ProjectsProps) => {
                     {project.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs font-medium rounded-full"
+                        className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen text-neutral-darkGreen/80 dark:text-neutral-sage text-xs font-medium rounded-full"
                       >
                         {tag}
                       </span>
@@ -212,20 +212,20 @@ const Projects = ({ language }: ProjectsProps) => {
                 </div>
 
                 <div className="space-y-4">
-                  <div className="p-6 bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-2xl border border-teal-200 dark:border-teal-800">
+                  <div className="p-6 bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 rounded-2xl border border-primary-sand/50 dark:border-primary-coral/50">
                     <div className="flex items-center space-x-2 mb-4">
-                      <TrendingUp className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                      <h4 className="font-semibold text-gray-900 dark:text-white">
+                      <TrendingUp className="w-5 h-5 text-primary-coral dark:text-primary-sand" />
+                      <h4 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream">
                         {language === 'en' ? 'Impact Metrics' : 'Métricas de Impacto'}
                       </h4>
                     </div>
                     <div className="space-y-4">
                       {project.metrics.map((metric, i) => (
                         <div key={i} className="flex items-center justify-between">
-                          <span className="text-sm text-gray-600 dark:text-gray-400">
+                          <span className="text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
                             {metric.label}
                           </span>
-                          <span className="text-2xl font-bold text-teal-600 dark:text-teal-400">
+                          <span className="text-2xl font-bold text-primary-coral dark:text-primary-sand">
                             {metric.value}
                           </span>
                         </div>
@@ -233,14 +233,14 @@ const Projects = ({ language }: ProjectsProps) => {
                     </div>
                   </div>
 
-                  <div className="p-6 bg-gray-100 dark:bg-gray-800 rounded-2xl">
+                  <div className="p-6 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-2xl">
                     <div className="flex items-center space-x-2 mb-3">
-                      <Target className="w-5 h-5 text-gray-700 dark:text-gray-300" />
-                      <h4 className="font-semibold text-gray-900 dark:text-white text-sm">
+                      <Target className="w-5 h-5 text-neutral-darkGreen/80 dark:text-neutral-sage" />
+                      <h4 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream text-sm">
                         {language === 'en' ? 'Project Type' : 'Tipo de Projeto'}
                       </h4>
                     </div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
                       {project.category}
                     </p>
                   </div>

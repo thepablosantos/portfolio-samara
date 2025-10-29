@@ -59,13 +59,13 @@ const About = ({ language }: AboutProps) => {
   const t = content[language];
 
   return (
-    <section id="about" className="py-24 px-6 bg-white dark:bg-black">
+    <section id="about" className="py-24 px-6 bg-neutral-lightCream dark:bg-neutral-deepBlack">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
             {t.title}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
+          <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray text-lg">
             {t.subtitle}
           </p>
         </div>
@@ -73,22 +73,22 @@ const About = ({ language }: AboutProps) => {
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
             <div className="space-y-4">
-              <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+              <p className="text-neutral-darkGreen/80 dark:text-neutral-sage text-lg leading-relaxed">
                 {t.mainText}
               </p>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray leading-relaxed">
                 {t.description}
               </p>
-              <div className="p-4 bg-teal-50 dark:bg-teal-900/20 border-l-4 border-teal-500 rounded">
-                <p className="text-gray-700 dark:text-gray-300 italic">
+              <div className="p-4 bg-primary-sand/20 dark:bg-primary-coral/10 border-l-4 border-primary-coral rounded">
+                <p className="text-neutral-darkGreen/80 dark:text-neutral-sage italic">
                   {t.location}
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
-              <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">📍 Ragusa, Italy</span>
-              <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">11+ {language === 'en' ? 'Years Experience' : 'Anos de Experiência'}</span>
+            <div className="flex items-center space-x-2 text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
+              <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">📍 Ragusa, Italy</span>
+              <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">11+ {language === 'en' ? 'Years Experience' : 'Anos de Experiência'}</span>
             </div>
           </div>
 
@@ -96,17 +96,17 @@ const About = ({ language }: AboutProps) => {
             {t.cards.map((card, index) => (
               <div
                 key={index}
-                className="p-6 bg-gray-50 dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-teal-500 dark:hover:border-teal-500 transition-all group"
+                className="p-6 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-2xl border border-neutral-sage/30 dark:border-neutral-darkGreen hover:border-primary-coral dark:hover:border-primary-coral transition-all group"
               >
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 bg-teal-100 dark:bg-teal-900/30 rounded-xl group-hover:scale-110 transition-transform">
-                    <card.icon className="w-6 h-6 text-teal-600 dark:text-teal-400" />
+                  <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-xl group-hover:scale-110 transition-transform">
+                    <card.icon className="w-6 h-6 text-primary-coral dark:text-primary-sand" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-lg font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-2">
                       {card.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                    <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray text-sm leading-relaxed">
                       {card.description}
                     </p>
                   </div>

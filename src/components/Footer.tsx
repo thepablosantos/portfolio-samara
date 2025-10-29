@@ -59,7 +59,7 @@ const Footer = ({ language }: FooterProps) => {
   };
 
   return (
-    <footer className="relative bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <footer className="relative bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 border-t border-neutral-sage/30 dark:border-neutral-darkGreen">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
@@ -67,25 +67,27 @@ const Footer = ({ language }: FooterProps) => {
               onClick={scrollToTop}
               className="flex items-center space-x-3 mb-4 group"
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform">
-                SA
-              </div>
+              <img
+                src="/logo2.png"
+                alt="Samara Alves Logo"
+                className="w-12 h-12 object-contain group-hover:scale-110 transition-transform"
+              />
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream font-heading">
                   Samara Alves
                 </h3>
-                <p className="text-sm text-teal-600 dark:text-teal-400">
+                <p className="text-sm text-primary-coral dark:text-primary-sand">
                   {t.tagline}
                 </p>
               </div>
             </button>
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-md">
+            <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray leading-relaxed max-w-md">
               {t.description}
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+            <h4 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
               {t.quickLinks}
             </h4>
             <ul className="space-y-2">
@@ -93,7 +95,7 @@ const Footer = ({ language }: FooterProps) => {
                 <li key={index}>
                   <button
                     onClick={() => scrollToSection(link.id)}
-                    className="text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+                    className="text-neutral-darkGreen/70 dark:text-neutral-softGray hover:text-primary-coral dark:hover:text-primary-sand transition-colors"
                   >
                     {link.label}
                   </button>
@@ -103,7 +105,7 @@ const Footer = ({ language }: FooterProps) => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+            <h4 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
               {t.connect}
             </h4>
             <ul className="space-y-2">
@@ -113,7 +115,7 @@ const Footer = ({ language }: FooterProps) => {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+                    className="text-neutral-darkGreen/70 dark:text-neutral-softGray hover:text-primary-coral dark:hover:text-primary-sand transition-colors"
                   >
                     {item.label}
                   </a>
@@ -121,22 +123,22 @@ const Footer = ({ language }: FooterProps) => {
               ))}
             </ul>
             <div className="mt-6">
-              <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+              <p className="text-xs text-neutral-sage dark:text-neutral-darkGreen mb-2">
                 📍 Ragusa, Italy
               </p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
+              <p className="text-xs text-neutral-sage dark:text-neutral-darkGreen">
                 ☎️ +353 83 122 2227
               </p>
             </div>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
+        <div className="pt-8 border-t border-neutral-sage/30 dark:border-neutral-darkGreen">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+            <p className="text-sm text-neutral-darkGreen/70 dark:text-neutral-darkGreen flex items-center">
               {t.madeWith} <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" /> {t.by}
             </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-neutral-sage dark:text-neutral-darkGreen">
               © {new Date().getFullYear()} Samara Alves. {t.rights}
             </p>
           </div>
@@ -145,7 +147,7 @@ const Footer = ({ language }: FooterProps) => {
 
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 p-4 bg-teal-500 hover:bg-teal-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 z-40"
+        className="fixed bottom-8 right-8 p-4 bg-primary-coral hover:bg-primary-coral/90 text-white rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 z-40"
         title="Back to top"
       >
         <ArrowUp className="w-5 h-5" />

@@ -35,27 +35,27 @@ const Hero = ({ language }: HeroProps) => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-6 bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900">
+    <section className="min-h-screen flex items-center justify-center pt-20 px-6 bg-gradient-to-b from-neutral-lightCream to-neutral-softGray/30 dark:from-neutral-deepBlack dark:to-neutral-darkGreen/50">
       <div className="max-w-7xl w-full mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-full">
-            <div className="w-2 h-2 bg-teal-500 rounded-full animate-pulse" />
-            <span className="text-sm text-teal-700 dark:text-teal-400 font-medium">{t.available}</span>
+          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-primary-sand/20 dark:bg-primary-coral/10 border border-primary-sand dark:border-primary-coral/50 rounded-full">
+            <div className="w-2 h-2 bg-primary-coral rounded-full animate-pulse" />
+            <span className="text-sm text-primary-coral dark:text-primary-sand font-medium">{t.available}</span>
           </div>
 
           <div>
-            <p className="text-gray-600 dark:text-gray-400 text-lg mb-2">{t.greeting}</p>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4">
+            <p className="text-neutral-darkGreen/70 dark:text-neutral-sage text-lg mb-2">{t.greeting}</p>
+            <h1 className="text-5xl md:text-7xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4 font-heading">
               Samara
               <br />
-              <span className="bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary-coral to-primary-sand bg-clip-text text-transparent">
                 Alves
               </span>
             </h1>
-            <h2 className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium mb-6">
+            <h2 className="text-xl md:text-2xl text-neutral-darkGreen/80 dark:text-neutral-sage font-medium mb-6">
               {t.title}
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-xl">
+            <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray text-lg leading-relaxed max-w-xl">
               {t.subtitle}
             </p>
           </div>
@@ -63,13 +63,13 @@ const Hero = ({ language }: HeroProps) => {
           <div className="flex flex-wrap gap-4">
             <button
               onClick={scrollToContact}
-              className="px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white rounded-full font-medium transition-all transform hover:scale-105 shadow-lg shadow-teal-500/30"
+              className="px-8 py-4 bg-primary-coral hover:bg-primary-coral/90 text-white rounded-full font-medium transition-all transform hover:scale-105 shadow-lg shadow-primary-coral/30"
             >
               {t.cta1}
             </button>
             <button
               onClick={scrollToProjects}
-              className="px-8 py-4 border-2 border-gray-300 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-500 text-gray-700 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 rounded-full font-medium transition-all"
+              className="px-8 py-4 border-2 border-neutral-sage dark:border-neutral-darkGreen hover:border-primary-sand dark:hover:border-primary-sand text-neutral-darkGreen dark:text-neutral-sage hover:text-primary-coral dark:hover:text-primary-sand rounded-full font-medium transition-all"
             >
               {t.cta2}
             </button>
@@ -80,43 +80,45 @@ const Hero = ({ language }: HeroProps) => {
               href="https://www.linkedin.com/in/samara-alves-marketing"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border border-gray-300 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-500 rounded-full transition-all hover:scale-110"
+              className="p-3 border border-neutral-sage dark:border-neutral-darkGreen hover:border-primary-coral dark:hover:border-primary-sand rounded-full transition-all hover:scale-110"
             >
-              <Linkedin className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+              <Linkedin className="w-5 h-5 text-neutral-darkGreen dark:text-neutral-sage" />
             </a>
             <a
               href="mailto:samara-allves@hotmail.com"
-              className="p-3 border border-gray-300 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-500 rounded-full transition-all hover:scale-110"
+              className="p-3 border border-neutral-sage dark:border-neutral-darkGreen hover:border-primary-coral dark:hover:border-primary-sand rounded-full transition-all hover:scale-110"
             >
-              <Mail className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+              <Mail className="w-5 h-5 text-neutral-darkGreen dark:text-neutral-sage" />
             </a>
             <a
               href="#contact"
-              className="p-3 border border-gray-300 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-500 rounded-full transition-all hover:scale-110"
+              className="p-3 border border-neutral-sage dark:border-neutral-darkGreen hover:border-primary-coral dark:hover:border-primary-sand rounded-full transition-all hover:scale-110"
             >
-              <FileText className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+              <FileText className="w-5 h-5 text-neutral-darkGreen dark:text-neutral-sage" />
             </a>
           </div>
         </div>
 
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative">
-            <div className="w-80 h-80 md:w-96 md:h-96 rounded-full border-4 border-teal-500 overflow-hidden shadow-2xl shadow-teal-500/20">
-              <div className="w-full h-full bg-gradient-to-br from-teal-400 to-cyan-600 flex items-center justify-center text-white text-6xl font-bold">
-                SA
-              </div>
+            <div className="w-80 h-80 md:w-96 md:h-96 rounded-full border-4 border-primary-coral overflow-hidden shadow-2xl shadow-primary-coral/20">
+              <img
+                src="/samara.png"
+                alt="Samara Alves"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="absolute -top-4 -right-4 w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+            <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary-coral rounded-full flex items-center justify-center shadow-lg animate-bounce">
               <span className="text-white text-2xl">📊</span>
             </div>
-            <div className="absolute top-1/4 -left-4 w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+            <div className="absolute top-1/4 -left-4 w-16 h-16 bg-primary-sand rounded-full flex items-center justify-center shadow-lg animate-pulse">
               <span className="text-white text-2xl">💡</span>
             </div>
-            <div className="absolute bottom-1/4 -right-4 w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+            <div className="absolute bottom-1/4 -right-4 w-16 h-16 bg-primary-warmBrown rounded-full flex items-center justify-center shadow-lg animate-pulse">
               <span className="text-white text-2xl">✨</span>
             </div>
-            <div className="absolute -bottom-2 right-12 px-6 py-3 bg-white dark:bg-gray-800 rounded-full shadow-lg border border-gray-200 dark:border-gray-700">
-              <span className="text-gray-900 dark:text-white font-medium">{t.available}</span>
+            <div className="absolute -bottom-2 right-12 px-6 py-3 bg-neutral-lightCream dark:bg-neutral-darkGreen rounded-full shadow-lg border border-neutral-sage dark:border-primary-coral/50">
+              <span className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">{t.available}</span>
             </div>
           </div>
         </div>
@@ -124,9 +126,9 @@ const Hero = ({ language }: HeroProps) => {
 
       <button
         onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 p-3 border border-gray-300 dark:border-gray-700 rounded-full animate-bounce hover:border-teal-500 transition-colors"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 p-3 border border-neutral-sage dark:border-neutral-darkGreen rounded-full animate-bounce hover:border-primary-coral transition-colors"
       >
-        <ArrowDown className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+        <ArrowDown className="w-5 h-5 text-neutral-darkGreen dark:text-neutral-sage" />
       </button>
     </section>
   );

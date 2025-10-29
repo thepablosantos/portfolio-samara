@@ -165,13 +165,13 @@ const Experience = ({ language }: ExperienceProps) => {
   const t = content[language];
 
   return (
-    <section id="experience" className="py-24 px-6 bg-gray-50 dark:bg-gray-900">
+    <section id="experience" className="py-24 px-6 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
             {t.title}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
+          <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray text-lg">
             {t.subtitle}
           </p>
         </div>
@@ -182,23 +182,23 @@ const Experience = ({ language }: ExperienceProps) => {
           <div className="space-y-12">
             {t.experiences.map((exp, index) => (
               <div key={index} className="relative">
-                <div className="hidden md:flex absolute left-0 w-16 h-16 bg-teal-500 rounded-full items-center justify-center shadow-lg z-10">
+                <div className="hidden md:flex absolute left-0 w-16 h-16 bg-primary-coral rounded-full items-center justify-center shadow-lg z-10">
                   <Briefcase className="w-8 h-8 text-white" />
                 </div>
 
-                <div className="md:ml-24 bg-white dark:bg-black border-2 border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:border-teal-500 dark:hover:border-teal-500 transition-all group">
+                <div className="md:ml-24 bg-neutral-lightCream dark:bg-neutral-deepBlack border-2 border-neutral-sage/30 dark:border-neutral-darkGreen rounded-2xl p-8 hover:border-primary-coral dark:hover:border-primary-coral transition-all group">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-colors">
+                      <h3 className="text-2xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-2 group-hover:text-primary-coral dark:group-hover:text-teal-400 transition-colors">
                         {exp.company}
                       </h3>
-                      <p className="text-lg text-teal-600 dark:text-teal-400 font-medium mb-3">
+                      <p className="text-lg text-primary-coral dark:text-primary-sand font-medium mb-3">
                         {exp.role}
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-4 mb-6 text-sm text-gray-600 dark:text-gray-400">
+                  <div className="flex flex-wrap items-center gap-4 mb-6 text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
                     <div className="flex items-center space-x-2">
                       <Calendar className="w-4 h-4" />
                       <span>{exp.period}</span>
@@ -210,13 +210,13 @@ const Experience = ({ language }: ExperienceProps) => {
                   </div>
 
                   <div className="mb-6">
-                    <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center">
-                      <span className="w-1.5 h-1.5 bg-teal-500 rounded-full mr-2" />
+                    <h4 className="text-sm font-semibold text-neutral-darkGreen/80 dark:text-neutral-sage mb-3 flex items-center">
+                      <span className="w-1.5 h-1.5 bg-primary-coral rounded-full mr-2" />
                       {language === 'en' ? 'Key Achievements' : 'Principais Conquistas'}
                     </h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, i) => (
-                        <li key={i} className="flex items-start space-x-2 text-gray-600 dark:text-gray-400">
+                        <li key={i} className="flex items-start space-x-2 text-neutral-darkGreen/70 dark:text-neutral-softGray">
                           <span className="text-teal-500 mt-1">•</span>
                           <span>{achievement}</span>
                         </li>
@@ -228,7 +228,7 @@ const Experience = ({ language }: ExperienceProps) => {
                     {exp.skills.map((skill, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-teal-50 dark:bg-teal-900/20 text-teal-700 dark:text-teal-400 text-xs font-medium rounded-full border border-teal-200 dark:border-teal-800"
+                        className="px-3 py-1 bg-primary-sand/20 dark:bg-primary-coral/10 text-primary-coral dark:text-primary-sand text-xs font-medium rounded-full border border-primary-sand/50 dark:border-primary-coral/50"
                       >
                         {skill}
                       </span>
