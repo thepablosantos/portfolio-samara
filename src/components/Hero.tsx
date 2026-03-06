@@ -8,16 +8,16 @@ const Hero = ({ language }: HeroProps) => {
   const content = {
     en: {
       greeting: "Hello, I'm",
-      title: "Digital Marketing & Social Media Specialist",
-      subtitle: "Crafting data-driven strategies and authentic brand narratives that connect culture, creativity, and measurable results",
+      title: "Digital Marketing & Social Media Strategist",
+      subtitle: "Creating data-driven strategies and authentic narratives that connect brands, culture, and measurable results.",
       cta1: "Get in Touch",
       cta2: "View Projects",
       available: "Available for Work"
     },
     pt: {
       greeting: "Olá, eu sou",
-      title: "Especialista em Marketing Digital & Social Media",
-      subtitle: "Criando estratégias orientadas por dados e narrativas autênticas de marca que conectam cultura, criatividade e resultados mensuráveis",
+      title: "Estrategista de Marketing Digital e Social Media",
+      subtitle: "Criando estratégias orientadas por dados e narrativas autênticas que conectam marcas, cultura e resultados.",
       cta1: "Entre em Contato",
       cta2: "Ver Projetos",
       available: "Disponível para Trabalho"
@@ -77,7 +77,7 @@ const Hero = ({ language }: HeroProps) => {
 
           <div className="flex items-center space-x-4 pt-4">
             <a
-              href="https://www.linkedin.com/in/samara-alves-marketing"
+              href="https://www.linkedin.com/in/samara-alves/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 border border-neutral-sage dark:border-neutral-darkGreen hover:border-primary-coral dark:hover:border-primary-sand rounded-full transition-all hover:scale-110"
@@ -85,14 +85,16 @@ const Hero = ({ language }: HeroProps) => {
               <Linkedin className="w-5 h-5 text-neutral-darkGreen dark:text-neutral-sage" />
             </a>
             <a
-              href="mailto:samara-allves@hotmail.com"
+              href="mailto:samaraab.sm@gmail.com"
               className="p-3 border border-neutral-sage dark:border-neutral-darkGreen hover:border-primary-coral dark:hover:border-primary-sand rounded-full transition-all hover:scale-110"
             >
               <Mail className="w-5 h-5 text-neutral-darkGreen dark:text-neutral-sage" />
             </a>
             <a
-              href="#contact"
+              href="/Samara-Alves-CV.pdf"
+              download
               className="p-3 border border-neutral-sage dark:border-neutral-darkGreen hover:border-primary-coral dark:hover:border-primary-sand rounded-full transition-all hover:scale-110"
+              title={language === 'en' ? 'Download CV' : 'Baixar CV'}
             >
               <FileText className="w-5 h-5 text-neutral-darkGreen dark:text-neutral-sage" />
             </a>

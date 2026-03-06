@@ -19,10 +19,10 @@ const Skills = ({ language }: SkillsProps) => {
             "Brand Positioning",
             "Content Strategy",
             "Lead Generation",
-            "Inbound Marketing",
-            "Sales Funnel",
+            "Sales Funnel Strategy",
             "Cultural Marketing",
-            "SEO Basics"
+            "Audience Growth Strategy",
+            "Digital Campaign Strategy"
           ]
         },
         {
@@ -31,13 +31,13 @@ const Skills = ({ language }: SkillsProps) => {
           color: "cyan",
           skills: [
             "Copywriting",
-            "Content Curation",
+            "Content Strategy for Social Media",
             "Community Management",
-            "Influencer Relations",
+            "Influencer Partnerships",
             "Crisis Management",
             "Social Listening",
             "Engagement Strategy",
-            "Brand Voice"
+            "Brand Voice Development"
           ]
         },
         {
@@ -48,10 +48,10 @@ const Skills = ({ language }: SkillsProps) => {
             "Google Analytics",
             "Meta Insights",
             "KPI Tracking",
-            "Campaign Reporting",
+            "Campaign Performance Analysis",
             "Data Analysis",
             "A/B Testing",
-            "Performance Optimization",
+            "Conversion Optimization",
             "ROI Measurement"
           ]
         },
@@ -61,15 +61,25 @@ const Skills = ({ language }: SkillsProps) => {
           color: "cyan",
           skills: [
             "Google Ads",
-            "Meta Business Suite",
+            "Meta Ads Manager",
+            "Google Analytics",
             "RD Station",
-            "Canva",
-            "CapCut",
-            "Adobe Express",
-            "Mailchimp",
             "Notion",
             "Trello",
+            "Canva",
+            "CapCut",
             "ChatGPT"
+          ]
+        },
+        {
+          icon: Palette,
+          title: "Content Production",
+          color: "teal",
+          skills: [
+            "Video Editing (Reels & Short-form)",
+            "Storytelling for Social Media",
+            "Scriptwriting for Short Videos",
+            "Content Planning & Editorial Calendars"
           ]
         }
       ],
@@ -83,12 +93,14 @@ const Skills = ({ language }: SkillsProps) => {
       softSkills: {
         title: "Professional Skills",
         items: [
-          "Empathetic Communication",
-          "Analytical Creativity",
-          "Organization",
-          "Team Leadership",
+          "Audience Growth Strategy",
+          "Content Strategy",
+          "Digital Campaign Planning",
+          "Brand Positioning",
+          "Community Building",
+          "Storytelling for Social Media",
           "Strategic Vision",
-          "Collaboration"
+          "Team Leadership"
         ]
       }
     },
@@ -105,10 +117,10 @@ const Skills = ({ language }: SkillsProps) => {
             "Posicionamento de Marca",
             "Estratégia de Conteúdo",
             "Geração de Leads",
-            "Inbound Marketing",
-            "Funil de Vendas",
+            "Estratégia de Funil de Vendas",
             "Marketing Cultural",
-            "SEO Básico"
+            "Estratégia de Crescimento de Audiência",
+            "Estratégia de Campanhas Digitais"
           ]
         },
         {
@@ -117,13 +129,13 @@ const Skills = ({ language }: SkillsProps) => {
           color: "cyan",
           skills: [
             "Copywriting",
-            "Curadoria de Conteúdo",
+            "Estratégia de Conteúdo para Redes Sociais",
             "Gestão de Comunidade",
-            "Relações com Influenciadores",
+            "Parcerias com Influenciadores",
             "Gestão de Crises",
             "Social Listening",
             "Estratégia de Engajamento",
-            "Tom de Voz"
+            "Desenvolvimento de Tom de Voz"
           ]
         },
         {
@@ -134,10 +146,10 @@ const Skills = ({ language }: SkillsProps) => {
             "Google Analytics",
             "Meta Insights",
             "Monitoramento de KPIs",
-            "Relatórios de Campanha",
+            "Análise de Performance de Campanhas",
             "Análise de Dados",
             "Testes A/B",
-            "Otimização de Performance",
+            "Otimização de Conversão",
             "Medição de ROI"
           ]
         },
@@ -147,15 +159,25 @@ const Skills = ({ language }: SkillsProps) => {
           color: "cyan",
           skills: [
             "Google Ads",
-            "Meta Business Suite",
+            "Meta Ads Manager",
+            "Google Analytics",
             "RD Station",
-            "Canva",
-            "CapCut",
-            "Adobe Express",
-            "Mailchimp",
             "Notion",
             "Trello",
+            "Canva",
+            "CapCut",
             "ChatGPT"
+          ]
+        },
+        {
+          icon: Palette,
+          title: "Produção de Conteúdo",
+          color: "teal",
+          skills: [
+            "Edição de Vídeo (Reels & Short-form)",
+            "Storytelling para Mídias Sociais",
+            "Roteirização para Vídeos Curtos",
+            "Planejamento de Conteúdo & Calendários Editoriais"
           ]
         }
       ],
@@ -169,12 +191,14 @@ const Skills = ({ language }: SkillsProps) => {
       softSkills: {
         title: "Habilidades Profissionais",
         items: [
-          "Comunicação Empática",
-          "Criatividade Analítica",
-          "Organização",
-          "Liderança de Equipe",
+          "Estratégia de Crescimento de Audiência",
+          "Estratégia de Conteúdo",
+          "Planejamento de Campanhas Digitais",
+          "Posicionamento de Marca",
+          "Construção de Comunidade",
+          "Storytelling para Mídias Sociais",
           "Visão Estratégica",
-          "Colaboração"
+          "Liderança de Equipe"
         ]
       }
     }

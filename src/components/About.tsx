@@ -9,9 +9,9 @@ const About = ({ language }: AboutProps) => {
     en: {
       title: "About Me",
       subtitle: "Driven by data and powered by creativity",
-      mainText: "Digital Marketing & Social Media professional with over 11 years of experience in communication strategies, branding, and brand positioning.",
-      description: "I've worked across agencies, startups, and public institutions — including the São Paulo Municipal Department of Culture — focusing on cultural content, storytelling, and engagement campaigns. My approach combines data analysis with creative sensitivity, building authentic narratives, strengthening digital presence, and generating consistent results. I'm passionate about projects that connect art, culture, and social impact through communication.",
-      location: "Currently living in Italy, seeking opportunities to apply digital marketing strategies and cultural communication in global projects that unite creativity, data, and social impact.",
+      mainText: "Digital Marketing & Social Media strategist with over 11 years of experience in communication strategies, branding, and brand positioning.",
+      description: "Throughout my career, I've worked with agencies, startups, and public institutions — including the São Paulo Municipal Department of Culture — developing projects focused on strategic content, storytelling, and engagement campaigns. My work combines data analysis and creative sensitivity to build authentic narratives, strengthen digital presence, and generate consistent results for brands and professionals.",
+      location: "Based in São Paulo, Brazil, driven by projects that connect culture, communication, and real impact through digital marketing.",
       cards: [
         {
           icon: Zap,
@@ -31,11 +31,11 @@ const About = ({ language }: AboutProps) => {
       ]
     },
     pt: {
-      title: "Sobre Mim",
+      title: "Sobre",
       subtitle: "Orientada por dados e impulsionada pela criatividade",
       mainText: "Profissional de Marketing Digital e Social Media com mais de 11 anos de experiência em estratégias de comunicação, branding e posicionamento de marca.",
-      description: "Atuei em agências, startups e instituições públicas — incluindo a Secretaria Municipal de Cultura de São Paulo — com foco em conteúdo cultural, storytelling e campanhas de engajamento. Tenho uma abordagem que combina análise de dados e sensibilidade criativa, construindo narrativas autênticas, fortalecendo a presença digital e gerando resultados consistentes. Sou apaixonada por projetos que conectam arte, cultura e impacto social através da comunicação.",
-      location: "Atualmente morando na Itália, busco oportunidades para aplicar estratégias de marketing digital e comunicação cultural em projetos globais que unam criatividade, dados e impacto social.",
+      description: "Ao longo da minha trajetória, atuei com agências, startups e instituições públicas — incluindo a Secretaria Municipal de Cultura de São Paulo — desenvolvendo projetos focados em conteúdo estratégico, storytelling e campanhas de engajamento. Meu trabalho une análise de dados e sensibilidade criativa para construir narrativas autênticas, fortalecer presença digital e gerar resultados consistentes para marcas e profissionais. Tenho experiência na gestão de redes sociais, planejamento estratégico de conteúdo, coordenação de produção criativa e análise de performance, sempre com foco em crescimento de audiência, posicionamento e conversão.",
+      location: "Sou movida por projetos que conectam cultura, comunicação e impacto real, utilizando o marketing digital como ferramenta para gerar valor, relevância e relacionamento com o público.",
       cards: [
         {
           icon: Zap,
@@ -87,7 +87,9 @@ const About = ({ language }: AboutProps) => {
             </div>
 
             <div className="flex items-center space-x-2 text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
-              <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">📍 Ragusa, Italy</span>
+              <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">
+                📍 {language === 'en' ? 'São Paulo, Brazil' : 'São Paulo, SP - Brasil'}
+              </span>
               <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">11+ {language === 'en' ? 'Years Experience' : 'Anos de Experiência'}</span>
             </div>
           </div>

@@ -9,7 +9,7 @@ const Contact = ({ language }: ContactProps) => {
     en: {
       title: "Get In Touch",
       subtitle: "Let's collaborate on your next project or discuss opportunities",
-      description: "I'm currently open to new opportunities in digital marketing, social media management, and cultural communication. Whether you need a strategic partner for your brand or want to discuss a project, I'd love to hear from you.",
+      description: "I'm currently open to new opportunities in digital marketing, social media management, and strategic content projects. Whether you need a strategic partner for your brand or want to discuss a project, I'd love to hear from you.",
       email: "Email",
       location: "Location",
       phone: "Phone",
@@ -29,7 +29,7 @@ const Contact = ({ language }: ContactProps) => {
     pt: {
       title: "Entre em Contato",
       subtitle: "Vamos colaborar no seu próximo projeto ou discutir oportunidades",
-      description: "Estou atualmente aberta a novas oportunidades em marketing digital, gestão de mídias sociais e comunicação cultural. Se você precisa de um parceiro estratégico para sua marca ou quer discutir um projeto, adoraria ouvir de você.",
+      description: "Estou aberta a novas oportunidades em marketing digital, gestão de mídias sociais e projetos estratégicos de conteúdo. Se você precisa de uma parceira estratégica para sua marca ou quer discutir um projeto, adoraria ouvir de você.",
       email: "Email",
       location: "Localização",
       phone: "Telefone",
@@ -86,7 +86,7 @@ const Contact = ({ language }: ContactProps) => {
               </h3>
 
               <a
-                href="mailto:samara-allves@hotmail.com"
+                href="mailto:samaraab.sm@gmail.com"
                 className="flex items-center space-x-4 p-4 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-xl hover:bg-neutral-softGray/20 dark:hover:bg-gray-800 transition-colors group"
               >
                 <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-lg group-hover:scale-110 transition-transform">
@@ -94,7 +94,7 @@ const Contact = ({ language }: ContactProps) => {
                 </div>
                 <div>
                   <p className="text-xs text-neutral-sage dark:text-neutral-softGray">{t.email}</p>
-                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">samara-allves@hotmail.com</p>
+                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">samaraab.sm@gmail.com</p>
                 </div>
               </a>
 
@@ -104,12 +104,14 @@ const Contact = ({ language }: ContactProps) => {
                 </div>
                 <div>
                   <p className="text-xs text-neutral-sage dark:text-neutral-softGray">{t.location}</p>
-                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">Ragusa, Italy</p>
+                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">
+                    {language === 'en' ? 'São Paulo, Brazil' : 'São Paulo, SP - Brasil'}
+                  </p>
                 </div>
               </div>
 
               <a
-                href="tel:+353831222227"
+                href="tel:+5511939225545"
                 className="flex items-center space-x-4 p-4 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-xl hover:bg-neutral-softGray/20 dark:hover:bg-gray-800 transition-colors group"
               >
                 <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-lg group-hover:scale-110 transition-transform">
@@ -117,12 +119,12 @@ const Contact = ({ language }: ContactProps) => {
                 </div>
                 <div>
                   <p className="text-xs text-neutral-sage dark:text-neutral-softGray">{t.phone}</p>
-                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">+353 83 122 2227</p>
+                  <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">+55 11 93922-5545</p>
                 </div>
               </a>
 
               <a
-                href="https://www.linkedin.com/in/samara-alves-marketing"
+                href="https://www.linkedin.com/in/samara-alves/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 p-4 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-xl hover:bg-neutral-softGray/20 dark:hover:bg-gray-800 transition-colors group"
@@ -147,10 +149,14 @@ const Contact = ({ language }: ContactProps) => {
               <p className="text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray mb-4">
                 {t.resumeText}
               </p>
-              <button className="w-full px-6 py-3 bg-primary-coral hover:bg-primary-coral/90 text-white rounded-xl font-medium transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+              <a
+                href="/Samara-Alves-CV.pdf"
+                download
+                className="w-full inline-flex items-center justify-center px-6 py-3 bg-primary-coral hover:bg-primary-coral/90 text-white rounded-xl font-medium transition-all transform hover:scale-105 space-x-2"
+              >
                 <FileDown className="w-4 h-4" />
                 <span>{t.downloadResume}</span>
-              </button>
+              </a>
             </div>
           </div>
 

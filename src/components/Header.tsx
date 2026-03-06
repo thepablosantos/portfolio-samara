@@ -20,12 +20,12 @@ const Header = ({ theme, language, onToggleTheme, onToggleLanguage }: HeaderProp
   };
 
   const navigation = {
-    en: ['About', 'Experience', 'Skills', 'Projects', 'Contact'],
-    pt: ['Sobre', 'Experiência', 'Habilidades', 'Projetos', 'Contato']
+    en: ['About', 'Projects', 'Skills & Expertise', 'Contact'],
+    pt: ['Sobre', 'Projetos', 'Skills & Expertise', 'Contato']
   };
 
   const navItems = navigation[language];
-  const navIds = ['about', 'experience', 'skills', 'projects', 'contact'];
+  const navIds = ['about', 'projects', 'skills', 'contact'];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-neutral-lightCream/95 dark:bg-neutral-deepBlack/95 backdrop-blur-md border-b border-neutral-sage/30 dark:border-neutral-darkGreen">
