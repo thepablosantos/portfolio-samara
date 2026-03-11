@@ -54,96 +54,34 @@ const Footer = ({ language }: FooterProps) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <footer className="relative bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 border-t border-neutral-sage/30 dark:border-neutral-darkGreen">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
-          <div className="md:col-span-2">
-            <button
-              onClick={scrollToTop}
-              className="flex items-center space-x-3 mb-4 group"
+    <footer className="relative bg-neutral-softGray/30 dark:bg-neutral-darkGreen border-t border-neutral-sage/40 dark:border-neutral-darkGreen">
+      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col items-center gap-4">
+        <button
+          onClick={scrollToTop}
+          className="group"
+        >
+          <img
+            src="/footer-logo.png"
+            alt="Samara Alves – Digital Marketing & Social Media Specialist"
+            className="h-12 md:h-16 w-auto object-contain group-hover:scale-105 transition-transform"
+          />
+        </button>
+        <div className="flex flex-col md:flex-row items-center justify-between w-full text-xs md:text-sm text-neutral-darkGreen/70 dark:text-neutral-lightCream">
+          <p>
+            © {new Date().getFullYear()} Samara Alves. {t.rights}
+          </p>
+          <p className="mt-2 md:mt-0">
+            <a
+              href="https://wa.me/5511939225545"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 hover:text-primary-coral dark:hover:text-primary-sand transition-colors"
             >
-              <img
-                src="/logo2.png"
-                alt="Samara Alves Logo"
-                className="w-12 h-12 object-contain group-hover:scale-110 transition-transform"
-              />
-              <div>
-                <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream font-heading">
-                  Samara Alves
-                </h3>
-                <p className="text-sm text-primary-coral dark:text-primary-sand">
-                  {t.tagline}
-                </p>
-              </div>
-            </button>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
-              {t.quickLinks}
-            </h4>
-            <ul className="space-y-2">
-              {t.links.map((link, index) => (
-                <li key={index}>
-                  <button
-                    onClick={() => scrollToSection(link.id)}
-                    className="text-neutral-darkGreen/70 dark:text-neutral-softGray hover:text-primary-coral dark:hover:text-primary-sand transition-colors"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
-              {t.connect}
-            </h4>
-            <ul className="space-y-2">
-              {t.social.map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-neutral-darkGreen/70 dark:text-neutral-softGray hover:text-primary-coral dark:hover:text-primary-sand transition-colors"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-6">
-              <p className="text-sm font-medium text-neutral-darkGreen dark:text-neutral-lightCream">
-                <a
-                  href="https://wa.me/5511939225545"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 hover:text-primary-coral dark:hover:text-primary-sand transition-colors"
-                >
-                  <span>📱</span>
-                  <span>+55 11 93922-5545</span>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="pt-8 border-t border-neutral-sage/30 dark:border-neutral-darkGreen">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p className="text-sm text-neutral-darkGreen/70 dark:text-neutral-darkGreen flex items-center">
-              {t.madeWith} {t.by}
-            </p>
-            <p className="text-sm text-neutral-sage dark:text-neutral-darkGreen">
-              © {new Date().getFullYear()} Samara Alves. {t.rights}
-            </p>
-          </div>
+              <span>📱</span>
+              <span>+55 11 93922-5545</span>
+            </a>
+          </p>
         </div>
       </div>
 

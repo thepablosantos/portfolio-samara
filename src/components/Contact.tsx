@@ -52,8 +52,8 @@ const Contact = ({ language }: ContactProps) => {
 
   return (
     <section id="contact" className="py-24 px-6 bg-neutral-lightCream dark:bg-neutral-deepBlack">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
             {t.title}
           </h2>
@@ -62,8 +62,7 @@ const Contact = ({ language }: ContactProps) => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-12">
-          <div className="lg:col-span-2 space-y-8">
+        <div className="space-y-8">
             <div className="p-6 bg-primary-sand/20 dark:bg-primary-coral/10 border-2 border-primary-sand/50 dark:border-primary-coral/50 rounded-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-3 h-3 bg-primary-coral rounded-full animate-pulse" />
@@ -77,7 +76,7 @@ const Contact = ({ language }: ContactProps) => {
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
+              <h3 className="font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-4 text-center md:text-left">
                 {language === 'en' ? 'Contact Information' : 'Informações de Contato'}
               </h3>
 
@@ -107,14 +106,16 @@ const Contact = ({ language }: ContactProps) => {
               </div>
 
               <a
-                href="tel:+5511939225545"
+                href="https://wa.me/5511939225545"
                 className="flex items-center space-x-4 p-4 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-xl hover:bg-neutral-softGray/20 dark:hover:bg-gray-800 transition-colors group"
               >
                 <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-lg group-hover:scale-110 transition-transform">
                   <Phone className="w-5 h-5 text-primary-coral dark:text-primary-sand" />
                 </div>
                 <div>
-                  <p className="text-xs text-neutral-sage dark:text-neutral-softGray">{t.phone}</p>
+                  <p className="text-xs text-neutral-sage dark:text-neutral-softGray">
+                    {language === 'en' ? 'WhatsApp' : 'WhatsApp / Telefone'}
+                  </p>
                   <p className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">+55 11 93922-5545</p>
                 </div>
               </a>
@@ -153,72 +154,6 @@ const Contact = ({ language }: ContactProps) => {
                 <FileDown className="w-4 h-4" />
                 <span>{t.downloadResume}</span>
               </a>
-            </div>
-          </div>
-
-          <div className="lg:col-span-3">
-            <div className="p-8 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-2xl border-2 border-neutral-sage/30 dark:border-neutral-darkGreen">
-              <div className="flex items-center space-x-3 mb-6">
-                <Send className="w-6 h-6 text-primary-coral dark:text-primary-sand" />
-                <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream">
-                  {t.sendMessage}
-                </h3>
-              </div>
-
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage mb-2">
-                      {t.formName}
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage dark:border-neutral-darkGreen/70 rounded-xl focus:outline-none focus:border-primary-coral dark:focus:border-primary-coral text-neutral-darkGreen dark:text-neutral-lightCream transition-colors"
-                      placeholder={t.formName}
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage mb-2">
-                      {t.formEmail}
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-3 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage dark:border-neutral-darkGreen/70 rounded-xl focus:outline-none focus:border-primary-coral dark:focus:border-primary-coral text-neutral-darkGreen dark:text-neutral-lightCream transition-colors"
-                      placeholder={t.formEmail}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage mb-2">
-                    {t.formSubject}
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage dark:border-neutral-darkGreen/70 rounded-xl focus:outline-none focus:border-primary-coral dark:focus:border-primary-coral text-neutral-darkGreen dark:text-neutral-lightCream transition-colors"
-                    placeholder={t.formSubject}
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-neutral-darkGreen/80 dark:text-neutral-sage mb-2">
-                    {t.formMessage}
-                  </label>
-                  <textarea
-                    rows={6}
-                    className="w-full px-4 py-3 bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage dark:border-neutral-darkGreen/70 rounded-xl focus:outline-none focus:border-primary-coral dark:focus:border-primary-coral text-neutral-darkGreen dark:text-neutral-lightCream transition-colors resize-none"
-                    placeholder={t.formMessage}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full px-8 py-4 bg-primary-coral hover:bg-primary-coral/90 text-white rounded-xl font-medium transition-all transform hover:scale-105 shadow-lg shadow-primary-coral/30 flex items-center justify-center space-x-2"
-                >
-                  <span>{t.formButton}</span>
-                  <Send className="w-4 h-4" />
-                </button>
-              </form>
             </div>
           </div>
         </div>

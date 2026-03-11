@@ -38,11 +38,6 @@ const Hero = ({ language }: HeroProps) => {
     <section className="min-h-screen flex items-center justify-center pt-20 px-6 bg-gradient-to-b from-neutral-lightCream to-neutral-softGray/30 dark:from-neutral-deepBlack dark:to-neutral-darkGreen/50">
       <div className="max-w-7xl w-full mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-primary-sand/20 dark:bg-primary-coral/10 border border-primary-sand dark:border-primary-coral/50 rounded-full">
-            <div className="w-2 h-2 bg-primary-coral rounded-full animate-pulse" />
-            <span className="text-sm text-primary-coral dark:text-primary-sand font-medium">{t.available}</span>
-          </div>
-
           <div>
             <p className="text-neutral-darkGreen/70 dark:text-neutral-sage text-lg mb-2">{t.greeting}</p>
             <h1 className="text-5xl md:text-7xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4 font-heading">
@@ -108,6 +103,7 @@ const Hero = ({ language }: HeroProps) => {
                 src="/samara.png"
                 alt="Samara Alves"
                 className="w-full h-full object-cover"
+                style={{ objectPosition: 'center 30%' }}
               />
             </div>
             <div className="pointer-events-none" aria-hidden="true">
