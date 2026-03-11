@@ -124,7 +124,7 @@ const Footer = ({ language }: FooterProps) => {
             </ul>
             <div className="mt-6">
               <p className="text-xs text-neutral-sage dark:text-neutral-darkGreen mb-2">
-                📍 Ragusa, Italy
+                
               </p>
               <p className="text-xs text-neutral-sage dark:text-neutral-darkGreen">
                 ☎️ +353 83 122 2227
