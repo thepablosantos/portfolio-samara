@@ -123,15 +123,15 @@ const instagramGallery: InstagramGroup[] = [
     description: 'Marketing digital para redes de restaurantes e franquias focado em crescimento e marca.',
     items: [
       {
-        id: 'nakato-1',
-        url: 'https://www.instagram.com/p/CwfcTPJOQKT/?igsh=ZG84cjV3dDQ4M2t2',
-        embedUrl: 'https://www.instagram.com/p/CwfcTPJOQKT/embed',
-        type: 'post',
-      },
-      {
         id: 'nakato-2',
         url: 'https://www.instagram.com/p/CGir_Gzp9v0/?igsh=ZjdyNnFyNjh0eGYz',
         embedUrl: 'https://www.instagram.com/p/CGir_Gzp9v0/embed',
+        type: 'post',
+      },
+      {
+        id: 'nakato-1',
+        url: 'https://www.instagram.com/p/CwfcTPJOQKT/?igsh=ZG84cjV3dDQ4M2t2',
+        embedUrl: 'https://www.instagram.com/p/CwfcTPJOQKT/embed',
         type: 'post',
       },
       {
