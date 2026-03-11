@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         primary: {
-          coral: '#e07f62',
+          coral: '#e2b381',
           sand: '#e2b381',
           warmBrown: '#b88c74',
         },

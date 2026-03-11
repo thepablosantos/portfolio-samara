@@ -573,6 +573,19 @@ const Projects = ({ language }: ProjectsProps) => {
   const t = content[language];
   const cases = projectCases[language];
 
+  const instagramGroupsById = instagramGallery.reduce<Record<string, InstagramGroup>>((acc, group) => {
+    acc[group.id] = group;
+    return acc;
+  }, {});
+
+  const projectToInstagramId: Record<string, string> = {
+    smc: 'smc',
+    iiman: 'iiman',
+    refato: 'nakato',
+    point: 'point',
+    'dra-juliana': 'dra-ju',
+  };
+
   return (
     <section id="projects" className="py-24 px-6 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70">
       <div className="max-w-7xl mx-auto">
@@ -591,6 +604,11 @@ const Projects = ({ language }: ProjectsProps) => {
               key={project.id}
               className="bg-neutral-lightCream dark:bg-neutral-deepBlack border-2 border-neutral-sage/30 dark:border-neutral-darkGreen rounded-3xl p-8 md:p-10 hover:border-primary-coral dark:hover:border-primary-coral transition-all"
             >
+              {(() => {
+                const instagramGroupId = projectToInstagramId[project.id];
+                const instagramGroup = instagramGroupId ? instagramGroupsById[instagramGroupId] : undefined;
+                return (
+                  <>
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-6">
                 <div className="space-y-2">
                   <h3 className="text-2xl md:text-3xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream">
@@ -632,8 +650,8 @@ const Projects = ({ language }: ProjectsProps) => {
 
                 <div className="space-y-4">
                   {project.results && project.resultsTitle && (
-                    <div>
-                      <h4 className="text-sm font-semibold text-neutral-darkGreen dark:text-neutral-sage mb-3">
+                    <div className="p-4 bg-primary-sand/10 dark:bg-primary-coral/10 border border-primary-sand/60 dark:border-primary-coral/60 rounded-2xl">
+                      <h4 className="text-sm font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-3">
                         {project.resultsTitle}
                       </h4>
                       <ul className="space-y-2 text-sm text-neutral-darkGreen/80 dark:text-neutral-softGray">
@@ -661,81 +679,69 @@ const Projects = ({ language }: ProjectsProps) => {
                   )}
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
 
-        <div className="mt-16">
-          <div className="text-center mb-10">
-            <h3 className="text-3xl md:text-4xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-3">
-              {t.galleryTitle}
-            </h3>
-            <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray max-w-3xl mx-auto">
-              {t.gallerySubtitle}
-            </p>
-          </div>
-
-          <div className="space-y-10">
-            {instagramGallery.map(group => (
-              <div key={group.id}>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3 gap-2">
-                  <div>
-                    <h4 className="text-xl font-semibold text-neutral-darkGreen dark:text-neutral-lightCream">
-                      {group.label}
-                    </h4>
-                    {'description' in group && (
-                      <p className="mt-1 text-xs sm:text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
-                        {group.description}
-                      </p>
-                    )}
-                  </div>
-                  <span className="text-xs uppercase tracking-wide text-neutral-sage dark:text-neutral-softGray">
-                    {language === 'en' ? 'Social Campaigns' : 'Campanhas em Redes Sociais'}
-                  </span>
-                </div>
-
-                <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                  {group.items.map(item => (
-                    <div
-                      key={item.id}
-                      className="bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage/40 dark:border-neutral-darkGreen rounded-2xl overflow-hidden shadow-sm hover:border-primary-coral/80 transition-colors"
-                    >
-                      <div className="relative bg-neutral-softGray/30 dark:bg-neutral-darkGreen">
-                        <iframe
-                          src={item.embedUrl}
-                          className="w-full h-80 md:h-96 border-0"
-                          loading="lazy"
-                          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                          allowFullScreen
-                          title={`${group.label} – ${item.type === 'reel' ? 'Reel' : 'Post'} no Instagram`}
-                        />
-                      </div>
-                      <div className="p-4 flex items-center justify-between">
+                  {instagramGroup && (
+                    <div className="mt-10 space-y-4">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <div>
-                          <p className="text-sm font-medium text-neutral-darkGreen dark:text-neutral-lightCream">
-                            {group.label}
-                          </p>
-                          <p className="text-xs text-neutral-sage dark:text-neutral-softGray capitalize">
-                            {item.type === 'reel'
-                              ? language === 'en' ? 'Reel' : 'Reel no Instagram'
-                              : language === 'en' ? 'Feed post' : 'Post no feed'}
+                          <h4 className="text-lg font-semibold text-neutral-darkGreen dark:text-neutral-lightCream">
+                            {instagramGroup.label}
+                          </h4>
+                          <p className="mt-1 text-xs sm:text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
+                            {instagramGroup.description}
                           </p>
                         </div>
-                        <a
-                          href={item.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs font-semibold text-primary-coral dark:text-primary-sand hover:underline"
-                        >
-                          {language === 'en' ? 'View post' : 'Ver no Instagram'}
-                        </a>
+                        <span className="text-xs uppercase tracking-wide text-neutral-sage dark:text-neutral-softGray">
+                          {language === 'en' ? 'Social Campaigns' : 'Campanhas em Redes Sociais'}
+                        </span>
+                      </div>
+
+                      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                        {instagramGroup.items.map(item => (
+                          <div
+                            key={item.id}
+                            className="bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage/40 dark:border-neutral-darkGreen rounded-2xl overflow-hidden shadow-sm hover:border-primary-coral/80 transition-colors"
+                          >
+                            <div className="relative bg-neutral-softGray/30 dark:bg-neutral-darkGreen">
+                              <iframe
+                                src={item.embedUrl}
+                                className="w-full h-80 md:h-96 border-0"
+                                loading="lazy"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen
+                                title={`${instagramGroup.label} – ${item.type === 'reel' ? 'Reel' : 'Post'} no Instagram`}
+                              />
+                            </div>
+                            <div className="p-4 flex items-center justify-between">
+                              <div>
+                                <p className="text-sm font-medium text-neutral-darkGreen dark:text-neutral-lightCream">
+                                  {instagramGroup.label}
+                                </p>
+                                <p className="text-xs text-neutral-sage dark:text-neutral-softGray capitalize">
+                                  {item.type === 'reel'
+                                    ? language === 'en' ? 'Reel' : 'Reel no Instagram'
+                                    : language === 'en' ? 'Feed post' : 'Post no feed'}
+                                </p>
+                              </div>
+                              <a
+                                href={item.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-xs font-semibold text-primary-coral dark:text-primary-sand hover:underline"
+                              >
+                                {language === 'en' ? 'View post' : 'Ver no Instagram'}
+                              </a>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+                  )}
+                  </>
+                );
+              })()}
+            </div>
+          ))}
         </div>
       </div>
     </section>

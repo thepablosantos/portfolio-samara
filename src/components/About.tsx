@@ -85,36 +85,13 @@ const About = ({ language }: AboutProps) => {
                 </p>
               </div>
             </div>
-
-            <div className="flex items-center space-x-2 text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
-              <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">
-                📍 {language === 'en' ? 'São Paulo, Brazil' : 'São Paulo, SP - Brasil'}
-              </span>
-              <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">11+ {language === 'en' ? 'Years Experience' : 'Anos de Experiência'}</span>
-            </div>
           </div>
 
-          <div className="space-y-6">
-            {t.cards.map((card, index) => (
-              <div
-                key={index}
-                className="p-6 bg-neutral-lightCream/50 dark:bg-neutral-darkGreen/70 rounded-2xl border border-neutral-sage/30 dark:border-neutral-darkGreen hover:border-primary-coral dark:hover:border-primary-coral transition-all group"
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="p-3 bg-primary-sand/30 dark:bg-primary-coral/20 rounded-xl group-hover:scale-110 transition-transform">
-                    <card.icon className="w-6 h-6 text-primary-coral dark:text-primary-sand" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-neutral-darkGreen dark:text-neutral-lightCream mb-2">
-                      {card.title}
-                    </h3>
-                    <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray text-sm leading-relaxed">
-                      {card.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="flex items-center space-x-2 text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
+            <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">
+              📍 {language === 'en' ? 'São Paulo, Brazil' : 'São Paulo, SP - Brasil'}
+            </span>
+            <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">11+ {language === 'en' ? 'Years Experience' : 'Anos de Experiência'}</span>
           </div>
         </div>
       </div>

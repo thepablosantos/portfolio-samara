@@ -17,7 +17,7 @@ const Hero = ({ language }: HeroProps) => {
     pt: {
       greeting: "Olá, eu sou a",
       title: "Estrategista de Marketing Digital e Social Media",
-      subtitle: "Criando estratégias orientadas por dados e narrativas autênticas que conectam marcas, cultura e resultados.",
+      subtitle: "Apaixonada por criar narrativas autênticas que conectam arte, cultura e impacto social através de comunicação estratégica.",
       cta1: "Entre em Contato",
       cta2: "Ver Projetos",
       available: "Disponível para Trabalho"

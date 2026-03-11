@@ -1,4 +1,4 @@
-import { Heart, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 interface FooterProps {
   language: 'en' | 'pt';
@@ -11,8 +11,8 @@ const Footer = ({ language }: FooterProps) => {
       description: "Passionate about creating authentic narratives that connect art, culture, and social impact through strategic communication.",
       quickLinks: "Quick Links",
       connect: "Connect",
-      madeWith: "Made with",
-      by: "by Samara Alves",
+      madeWith: "Made by Samara Alves",
+      by: "",
       rights: "All rights reserved.",
       links: [
         { label: "About", id: "about" },
@@ -31,8 +31,8 @@ const Footer = ({ language }: FooterProps) => {
       description: "Apaixonada por criar narrativas autênticas que conectam arte, cultura e impacto social através de comunicação estratégica.",
       quickLinks: "Links Rápidos",
       connect: "Conecte-se",
-      madeWith: "Feito com",
-      by: "por Samara Alves",
+      madeWith: "Feito por Samara Alves",
+      by: "",
       rights: "Todos os direitos reservados.",
       links: [
         { label: "Sobre", id: "about" },
@@ -136,7 +136,7 @@ const Footer = ({ language }: FooterProps) => {
         <div className="pt-8 border-t border-neutral-sage/30 dark:border-neutral-darkGreen">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-sm text-neutral-darkGreen/70 dark:text-neutral-darkGreen flex items-center">
-              {t.madeWith} <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" /> {t.by}
+              {t.madeWith} {t.by}
             </p>
             <p className="text-sm text-neutral-sage dark:text-neutral-darkGreen">
               © {new Date().getFullYear()} Samara Alves. {t.rights}
