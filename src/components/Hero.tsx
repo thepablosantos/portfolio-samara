@@ -103,7 +103,7 @@ const Hero = ({ language }: HeroProps) => {
                 src="/samara.png"
                 alt="Samara Alves"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: 'center 30%' }}
+                style={{ objectPosition: 'center 60%' }}
               />
             </div>
             <div className="pointer-events-none" aria-hidden="true">

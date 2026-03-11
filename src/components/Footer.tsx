@@ -55,34 +55,30 @@ const Footer = ({ language }: FooterProps) => {
   };
 
   return (
-    <footer className="relative bg-neutral-softGray/30 dark:bg-neutral-darkGreen border-t border-neutral-sage/40 dark:border-neutral-darkGreen">
-      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col items-center gap-4">
+    <footer className="relative bg-neutral-lightCream/90 dark:bg-neutral-deepBlack border-t border-neutral-sage/40 dark:border-neutral-darkGreen">
+      <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
         <button
           onClick={scrollToTop}
-          className="group"
+          className="flex items-center space-x-3 group"
         >
           <img
-            src="/footer-logo.png"
-            alt="Samara Alves – Digital Marketing & Social Media Specialist"
-            className="h-12 md:h-16 w-auto object-contain group-hover:scale-105 transition-transform"
+            src="/logo2.png"
+            alt="Samara Alves Logo"
+            className="w-10 h-10 object-contain group-hover:scale-110 transition-transform"
           />
+          <div className="hidden sm:block text-left">
+            <p className="text-sm font-semibold text-neutral-darkGreen dark:text-neutral-lightCream">
+              Samara Alves
+            </p>
+            <p className="text-xs text-primary-coral dark:text-primary-sand">
+              {t.tagline}
+            </p>
+          </div>
         </button>
-        <div className="flex flex-col md:flex-row items-center justify-between w-full text-xs md:text-sm text-neutral-darkGreen/70 dark:text-neutral-lightCream">
-          <p>
-            © {new Date().getFullYear()} Samara Alves. {t.rights}
-          </p>
-          <p className="mt-2 md:mt-0">
-            <a
-              href="https://wa.me/5511939225545"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 hover:text-primary-coral dark:hover:text-primary-sand transition-colors"
-            >
-              <span>📱</span>
-              <span>+55 11 93922-5545</span>
-            </a>
-          </p>
-        </div>
+
+        <p className="text-xs sm:text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
+          © 2026 Samara Alves. {t.rights}
+        </p>
       </div>
 
       <button
