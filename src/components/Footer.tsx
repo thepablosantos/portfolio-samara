@@ -120,7 +120,7 @@ const Footer = ({ language }: FooterProps) => {
               ))}
             </ul>
             <div className="mt-6">
-              <p className="text-xs text-neutral-sage dark:text-neutral-darkGreen">
+              <p className="text-sm font-medium text-neutral-darkGreen dark:text-neutral-lightCream">
                 <a
                   href="https://wa.me/5511939225545"
                   target="_blank"

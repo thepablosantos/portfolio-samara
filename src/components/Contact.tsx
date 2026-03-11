@@ -64,10 +64,6 @@ const Contact = ({ language }: ContactProps) => {
 
         <div className="grid lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2 space-y-8">
-            <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray leading-relaxed">
-              {t.description}
-            </p>
-
             <div className="p-6 bg-primary-sand/20 dark:bg-primary-coral/10 border-2 border-primary-sand/50 dark:border-primary-coral/50 rounded-2xl">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-3 h-3 bg-primary-coral rounded-full animate-pulse" />
