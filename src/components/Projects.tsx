@@ -86,8 +86,8 @@ const instagramGallery: InstagramGroup[] = [
       },
       {
         id: 'dra-ju-3',
-        url: 'https://www.instagram.com/reel/DLqJ-DKRWWM/?igsh=MXh6aGQ4cHphcG9vcg==',
-        embedUrl: 'https://www.instagram.com/reel/DLqJ-DKRWWM/embed',
+        url: 'https://www.instagram.com/reel/DGjVnCfsvs1/?igsh=MXRtcnF6aHpmM2IxOA==',
+        embedUrl: 'https://www.instagram.com/reel/DGjVnCfsvs1/embed',
         type: 'reel',
       },
     ],
@@ -136,8 +136,8 @@ const instagramGallery: InstagramGroup[] = [
       },
       {
         id: 'nakato-3',
-        url: 'https://www.instagram.com/p/CD4okSQJaXF/?igsh=MXRtYXJ5MnVteTM5ZQ==',
-        embedUrl: 'https://www.instagram.com/p/CD4okSQJaXF/embed',
+        url: 'https://www.instagram.com/p/CF0OrIsDHEE/?igsh=cTZnM2FxZmlwd202',
+        embedUrl: 'https://www.instagram.com/p/CF0OrIsDHEE/embed',
         type: 'post',
       },
     ],
@@ -683,10 +683,10 @@ const Projects = ({ language }: ProjectsProps) => {
                               index % 2 === 0 ? 'bg-neutral-sage/30 dark:bg-neutral-darkGreen' : 'bg-neutral-lightCream dark:bg-neutral-deepBlack'
                             }`}
                           >
-                            <div className="relative bg-neutral-softGray/30 dark:bg-neutral-darkGreen">
+                            <div className="relative bg-neutral-lightCream dark:bg-neutral-darkGreen">
                               <iframe
                                 src={item.embedUrl}
-                                className="w-full h-80 md:h-96 border-0"
+                                className="w-full aspect-[9/16] md:aspect-[9/16] border-0"
                                 loading="lazy"
                                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                                 allowFullScreen
