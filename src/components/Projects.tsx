@@ -65,12 +65,6 @@ const instagramGallery: InstagramGroup[] = [
         embedUrl: 'https://www.instagram.com/reel/C4-hS6KrmZw/embed',
         type: 'reel',
       },
-      {
-        id: 'smc-4',
-        url: 'https://www.instagram.com/reel/C5qYlayLdfn/?igsh=MXNmeXpuaXhtbHdkNQ==',
-        embedUrl: 'https://www.instagram.com/reel/C5qYlayLdfn/embed',
-        type: 'reel',
-      },
     ],
   },
   {
@@ -94,12 +88,6 @@ const instagramGallery: InstagramGroup[] = [
         id: 'dra-ju-3',
         url: 'https://www.instagram.com/reel/DLqJ-DKRWWM/?igsh=MXh6aGQ4cHphcG9vcg==',
         embedUrl: 'https://www.instagram.com/reel/DLqJ-DKRWWM/embed',
-        type: 'reel',
-      },
-      {
-        id: 'dra-ju-4',
-        url: 'https://www.instagram.com/reel/DGjVnCfsvs1/?igsh=MXRtcnF6aHpmM2IxOA==',
-        embedUrl: 'https://www.instagram.com/reel/DGjVnCfsvs1/embed',
         type: 'reel',
       },
     ],
@@ -150,12 +138,6 @@ const instagramGallery: InstagramGroup[] = [
         id: 'nakato-3',
         url: 'https://www.instagram.com/p/CD4okSQJaXF/?igsh=MXRtYXJ5MnVteTM5ZQ==',
         embedUrl: 'https://www.instagram.com/p/CD4okSQJaXF/embed',
-        type: 'post',
-      },
-      {
-        id: 'nakato-4',
-        url: 'https://www.instagram.com/p/CF0OrIsDHEE/?igsh=cTZnM2FxZmlwd202',
-        embedUrl: 'https://www.instagram.com/p/CF0OrIsDHEE/embed',
         type: 'post',
       },
     ],
@@ -684,9 +666,6 @@ const Projects = ({ language }: ProjectsProps) => {
                     <div className="mt-10 space-y-4">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <div>
-                          <h4 className="text-lg font-semibold text-neutral-darkGreen dark:text-neutral-lightCream">
-                            {instagramGroup.label}
-                          </h4>
                           <p className="mt-1 text-xs sm:text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
                             {instagramGroup.description}
                           </p>
@@ -697,10 +676,12 @@ const Projects = ({ language }: ProjectsProps) => {
                       </div>
 
                       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                        {instagramGroup.items.map(item => (
+                        {instagramGroup.items.map((item, index) => (
                           <div
                             key={item.id}
-                            className="bg-neutral-lightCream dark:bg-neutral-deepBlack border border-neutral-sage/40 dark:border-neutral-darkGreen rounded-2xl overflow-hidden shadow-sm hover:border-primary-coral/80 transition-colors"
+                            className={`border border-neutral-sage/40 dark:border-neutral-darkGreen rounded-2xl overflow-hidden shadow-sm hover:border-primary-coral/80 transition-colors ${
+                              index % 2 === 0 ? 'bg-neutral-sage/30 dark:bg-neutral-darkGreen' : 'bg-neutral-lightCream dark:bg-neutral-deepBlack'
+                            }`}
                           >
                             <div className="relative bg-neutral-softGray/30 dark:bg-neutral-darkGreen">
                               <iframe

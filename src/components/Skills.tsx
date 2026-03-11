@@ -37,7 +37,11 @@ const Skills = ({ language }: SkillsProps) => {
             "Crisis Management",
             "Social Listening",
             "Engagement Strategy",
-            "Brand Voice Development"
+            "Brand Voice Development",
+            "Video Editing (Reels & Short-form)",
+            "Storytelling for Social Media",
+            "Scriptwriting for Short Videos",
+            "Content Planning & Editorial Calendars"
           ]
         },
         {
@@ -71,17 +75,6 @@ const Skills = ({ language }: SkillsProps) => {
             "ChatGPT"
           ]
         },
-        {
-          icon: Palette,
-          title: "Content Production",
-          color: "teal",
-          skills: [
-            "Video Editing (Reels & Short-form)",
-            "Storytelling for Social Media",
-            "Scriptwriting for Short Videos",
-            "Content Planning & Editorial Calendars"
-          ]
-        }
       ],
       languages: {
         title: "Languages",
@@ -135,7 +128,11 @@ const Skills = ({ language }: SkillsProps) => {
             "Gestão de Crises",
             "Social Listening",
             "Estratégia de Engajamento",
-            "Desenvolvimento de Tom de Voz"
+            "Desenvolvimento de Tom de Voz",
+            "Edição de Vídeo (Reels & Short-form)",
+            "Storytelling para Mídias Sociais",
+            "Roteirização para Vídeos Curtos",
+            "Planejamento de Conteúdo & Calendários Editoriais"
           ]
         },
         {
@@ -169,17 +166,6 @@ const Skills = ({ language }: SkillsProps) => {
             "ChatGPT"
           ]
         },
-        {
-          icon: Palette,
-          title: "Produção de Conteúdo",
-          color: "teal",
-          skills: [
-            "Edição de Vídeo (Reels & Short-form)",
-            "Storytelling para Mídias Sociais",
-            "Roteirização para Vídeos Curtos",
-            "Planejamento de Conteúdo & Calendários Editoriais"
-          ]
-        }
       ],
       languages: {
         title: "Idiomas",

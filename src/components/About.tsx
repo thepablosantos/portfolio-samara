@@ -60,8 +60,8 @@ const About = ({ language }: AboutProps) => {
 
   return (
     <section id="about" className="py-24 px-6 bg-neutral-lightCream dark:bg-neutral-deepBlack">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream mb-4">
             {t.title}
           </h2>
@@ -70,28 +70,26 @@ const About = ({ language }: AboutProps) => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <p className="text-neutral-darkGreen/80 dark:text-neutral-sage text-lg leading-relaxed">
-                {t.mainText}
-              </p>
-              <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray leading-relaxed">
-                {t.description}
-              </p>
-              <div className="p-4 bg-primary-sand/20 dark:bg-primary-coral/10 border-l-4 border-primary-coral rounded">
-                <p className="text-neutral-darkGreen/80 dark:text-neutral-sage italic">
-                  {t.location}
-                </p>
-              </div>
-            </div>
+        <div className="space-y-8 text-center md:text-left">
+          <p className="text-neutral-darkGreen/80 dark:text-neutral-sage text-lg leading-relaxed">
+            {t.mainText}
+          </p>
+          <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray leading-relaxed">
+            {t.description}
+          </p>
+          <div className="p-5 bg-primary-sand/20 dark:bg-primary-coral/10 border-l-4 border-primary-coral rounded-xl">
+            <p className="text-neutral-darkGreen/80 dark:text-neutral-sage italic">
+              {t.location}
+            </p>
           </div>
 
-          <div className="flex items-center space-x-2 text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
-            <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 text-sm text-neutral-darkGreen/70 dark:text-neutral-softGray">
+            <span className="px-3 py-1 bg-neutral-softGray/30 dark:bg-neutral-darkGreen rounded-full">
               📍 {language === 'en' ? 'São Paulo, Brazil' : 'São Paulo, SP - Brasil'}
             </span>
-            <span className="px-3 py-1 bg-neutral-softGray/20 dark:bg-neutral-darkGreen rounded-full">11+ {language === 'en' ? 'Years Experience' : 'Anos de Experiência'}</span>
+            <span className="px-3 py-1 bg-neutral-softGray/30 dark:bg-neutral-darkGreen rounded-full">
+              11+ {language === 'en' ? 'Years Experience' : 'Anos de Experiência'}
+            </span>
           </div>
         </div>
       </div>

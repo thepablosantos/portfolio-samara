@@ -81,9 +81,6 @@ const Footer = ({ language }: FooterProps) => {
                 </p>
               </div>
             </button>
-            <p className="text-neutral-darkGreen/70 dark:text-neutral-softGray leading-relaxed max-w-md">
-              {t.description}
-            </p>
           </div>
 
           <div>
