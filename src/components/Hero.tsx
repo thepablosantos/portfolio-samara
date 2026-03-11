@@ -110,14 +110,10 @@ const Hero = ({ language }: HeroProps) => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary-coral rounded-full flex items-center justify-center shadow-lg animate-bounce">
-              <span className="text-white text-2xl">📊</span>
-            </div>
-            <div className="absolute top-1/4 -left-4 w-16 h-16 bg-primary-sand rounded-full flex items-center justify-center shadow-lg animate-pulse">
-              <span className="text-white text-2xl">💡</span>
-            </div>
-            <div className="absolute bottom-1/4 -right-4 w-16 h-16 bg-primary-warmBrown rounded-full flex items-center justify-center shadow-lg animate-pulse">
-              <span className="text-white text-2xl">✨</span>
+            <div className="pointer-events-none" aria-hidden="true">
+              <div className="absolute inset-[-18px] rounded-full border border-primary-sand/50" />
+              <div className="absolute -top-10 -left-8 w-28 h-28 bg-primary-sand/40 blur-2xl rounded-full" />
+              <div className="absolute -bottom-12 -right-10 w-32 h-32 bg-neutral-sage/50 blur-3xl rounded-full" />
             </div>
             <div className="absolute -bottom-2 right-12 px-6 py-3 bg-neutral-lightCream dark:bg-neutral-darkGreen rounded-full shadow-lg border border-neutral-sage dark:border-primary-coral/50">
               <span className="text-neutral-darkGreen dark:text-neutral-lightCream font-medium">{t.available}</span>

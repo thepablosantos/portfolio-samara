@@ -120,11 +120,16 @@ const Footer = ({ language }: FooterProps) => {
               ))}
             </ul>
             <div className="mt-6">
-              <p className="text-xs text-neutral-sage dark:text-neutral-darkGreen mb-2">
-                
-              </p>
               <p className="text-xs text-neutral-sage dark:text-neutral-darkGreen">
-                ☎️ +353 83 122 2227
+                <a
+                  href="https://wa.me/5511939225545"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 hover:text-primary-coral dark:hover:text-primary-sand transition-colors"
+                >
+                  <span>📱</span>
+                  <span>+55 11 93922-5545</span>
+                </a>
               </p>
             </div>
           </div>

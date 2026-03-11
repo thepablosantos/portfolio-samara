@@ -233,7 +233,7 @@ const Skills = ({ language }: SkillsProps) => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-8 bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 border-2 border-primary-sand/50 dark:border-primary-coral/50 rounded-2xl">
+          <div className="p-8 bg-neutral-sage/30 dark:bg-neutral-darkGreen/70 border-2 border-primary-sand/60 dark:border-primary-coral/60 rounded-2xl">
             <div className="flex items-center space-x-3 mb-6">
               <GlobeIcon className="w-6 h-6 text-primary-coral dark:text-primary-sand" />
               <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream">
@@ -260,7 +260,7 @@ const Skills = ({ language }: SkillsProps) => {
             </div>
           </div>
 
-          <div className="p-8 bg-gradient-to-br from-cyan-50 to-teal-50 dark:from-cyan-900/20 dark:to-teal-900/20 border-2 border-cyan-200 dark:border-cyan-800 rounded-2xl">
+          <div className="p-8 bg-neutral-sage/30 dark:bg-neutral-darkGreen/70 border-2 border-primary-sand/60 dark:border-primary-coral/60 rounded-2xl">
             <div className="flex items-center space-x-3 mb-6">
               <Award className="w-6 h-6 text-cyan-600 dark:text-cyan-400" />
               <h3 className="text-xl font-bold text-neutral-darkGreen dark:text-neutral-lightCream">
